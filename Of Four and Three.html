@@ -11,62 +11,186 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Of Four and Three" startnode="1" creator="Twine" creator-version="2.3.0" ifid="447B5996-54E2-4478-B3D5-E110D96AE1F4" zoom="1" format="Harlowe" format-version="3.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar tw-icom.redo {
+<tw-storydata name="Of Four and Three" startnode="1" creator="Twine" creator-version="2.3.0" ifid="447B5996-54E2-4478-B3D5-E110D96AE1F4" zoom="1" format="Harlowe" format-version="3.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar tw-icon.redo {
   display: none;
 }
 
 tw-sidebar tw-icon.undo {
   display: none;
 }
+
+tw-story[tags~="realm1"] {
+ background-image:url("http://i.imgur.com/bZ7hsGI.png");
+ background-size:cover;
+}
+
+tw-story[tags~="keyhole1"] {
+ background-image:url("https://t4.ftcdn.net/jpg/01/86/28/09/500_F_186280989_aD701pEFQIVgkbofRaHFLTUUKli8LHqm.jpg");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center;
+ background-color: #000546;
+}
+
+tw-story[tags~="keyhole2"] {
+ background-image:url("https://goodmenproject.com/wp-content/uploads/2016/06/Through-a-Keyhole-by-Kate-Ter-Haar.jpg");
+ background-size:cover;
+}
+
+tw-story[tags~="keyhole3"] {
+ background-image:url("https://res.cloudinary.com/teepublic/image/private/s--jErGt0Mu--/t_Preview/b_rgb:191919,c_lpad,f_jpg,h_630,q_90,w_1200/v1495771640/production/designs/1625954_1.jpg");
+ background-size:cover;
+}
+
+tw-story[tags~="keyhole4"] {
+ background-image:url("https://i.pinimg.com/originals/15/98/0a/15980af5eb389897fa6ca6f517c16b11.jpg");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center;
+}
+
+tw-story[tags~="realm2"] {
+ background-image:url("https://i.imgur.com/agrQVRM.png");
+ background-size:cover;
+}
+
+tw-story[tags~="lg1"] {
+ background-image:url("https://www.the-wau.com/timthumb.php?src=uploads/1510915212596.jpg&h=523&w=1000&zc=1");
+ background-size:cover;
+}
+
+tw-story[tags~="lg2"] {
+ background-image:url("https://farm3.staticflickr.com/2617/4063226131_df4825c4a3_o.jpg");
+ background-size:cover;
+}
+
+tw-story[tags~="lg3"] {
+ background-image:url("http://www.artsobserver.com/wp-content/uploads/2012/06/IMG_6427.jpg");
+ background-size:cover;
+}
+
+tw-story[tags~="lg4"] {
+ background-image:url("https://twistedsifter.files.wordpress.com/2016/04/mirror-glass-broken-lake-impact-by-erik-johansson.jpg");
+ background-size:cover;
+}
+
+tw-story[tags~="realm3"] {
+ background-image:url("http://digitalblasphemy.com/graphics/fb/portals1fb.jpg");
+ background-size:cover;
+}
+
+tw-story[tags~="rift1"] {
+ background-image:url("http://www.writingfordesigners.com/wp-content/uploads/2015/04/konoike-2.jpg");
+ background-size:cover;
+}
+
+tw-story[tags~="rift2"] {
+ background-image:url("http://3.bp.blogspot.com/-IwW1SgZVWck/VHPTF_j1xbI/AAAAAAAAAVE/P0QmQ2uVuMY/s1600/Portals%2B2.jpg");
+ background-size:cover;
+}
+
+tw-story[tags~="rift3"] {
+ background-image:url("http://2.bp.blogspot.com/_eUbgIRqbCds/S-VmRRVpUEI/AAAAAAAAALE/-HWLcM5Mdlo/s1600/aurora.jpg");
+ background-size:cover;
+}
+
+tw-story[tags~="rift4"] {
+ background-image:url("https://s3-us-west-1.amazonaws.com/prohbtd/uploads/public/59c/bed/3f4/59cbed3f47426415070879.jpg");
+ background-size:cover;
+}
+
+tw-story[tags~="realm4"] {
+ background-image:url("https://shadeofthemoriahtree.files.wordpress.com/2015/01/so-far-away.jpg");
+ background-size:cover;
+}
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">var realm1Portal = 0;
 var realm2Portal = 0;
 var realm3Portal = 0;
 var toRealm1 = 0;
 var toRealm2 = 0;
 var toRealm3 = 0;
-</script><tw-passagedata pid="1" name="Realm 1" tags="" position="413,205" size="100,100">[Narrative R1]
+var keyholereveal = 0;
+var mirrorreveal = 0;
+var riftreveal = 0;
+
+
+</script><tw-tag name="keyhole" color="blue"></tw-tag>,<tw-tag name="keyhole1" color="blue"></tw-tag>,<tw-tag name="keyhole2" color="blue"></tw-tag>,<tw-tag name="keyhole3" color="blue"></tw-tag>,<tw-tag name="keyhole4" color="blue"></tw-tag>,<tw-tag name="realm1" color="blue"></tw-tag>,<tw-tag name="realm3" color="green"></tw-tag>,<tw-tag name="realm4" color="purple"></tw-tag>,<tw-tag name="rift" color="green"></tw-tag>,<tw-tag name="rift1" color="green"></tw-tag>,<tw-tag name="rift2" color="green"></tw-tag>,<tw-tag name="rift3" color="green"></tw-tag>,<tw-tag name="rift4" color="green"></tw-tag><tw-passagedata pid="1" name="Realm 1" tags="realm1" position="418,209" size="100,100">[You find yourself in a stately room full of doors.](mouseover: &quot;doors.&quot;)[Weird lights and unfamiliar sounds spill from each door.]
+[[Peer through a keyhole|Keyhole 1]]
 [Something shimmers in the darkness... ]&lt;shimmer|(click: ?shimmer)[(if: $toRealm2 is 0 and $toRealm3 is 0)[The air itself seems to breathe around you.](else-if: $toRealm2 is 1 and $toRealm3 is 0)[[[A portal to the second realm opens!|Realm 2]]](else-if: $toRealm2 is 0 and $toRealm3 is 1)[[[A portal to the third realm opens!|Realm 3]]](else-if: $toRealm2 is 1 and $toRealm3 is 1)[[[A portal to the second realm opens! |Realm 2]][[A portal to the third realm opens!|Realm 3]]]]
-[[Inspect|Keyhole 1]]
-[[Back|Rift 4]]
 (if: $realm1Portal is 1 and $realm2Portal is 1 and $realm3Portal is 1)[[[Cross to the Hidden Realm|Realm 4]]]
-(set: $toRealm1 to 1)</tw-passagedata><tw-passagedata pid="2" name="Keyhole 1" tags="" position="533,98" size="100,100">[Narrative K1]
-[[Inspect|Keyhole 2]]
-[[Back|Realm 1]]</tw-passagedata><tw-passagedata pid="3" name="Keyhole 2" tags="" position="664,21" size="100,100">[Narrative K2]
-[[Inspect|Keyhole 3]]
-[[Back|Keyhole 1]]</tw-passagedata><tw-passagedata pid="4" name="Keyhole 3" tags="" position="814,20" size="100,100">[Narrative K3]
-[[Inspect|Keyhole 4]]
-[[Back|Keyhole 2]]</tw-passagedata><tw-passagedata pid="5" name="Keyhole 4" tags="" position="947,101" size="100,100">[Narrative K4]
+(if: $realm3Portal is 1)[[[Back|Rift 4]]]
+(set: $toRealm1 to 1)</tw-passagedata><tw-passagedata pid="2" name="Keyhole 1" tags="keyhole1" position="530,81" size="100,100">[You spy an ancient world shaded by moonlight and the spirits of nature.]
+(if: $keyholereveal is 1)[(mouseover: &quot;moonlight&quot;)[The moon shines clear as day. You can only imagine how fierce the sun might be.]]
+(if: $keyholereveal is 1)[(mouseover: &quot;spirits&quot;)[The sound of leaves mixes with voices of the wind, urging you to open the door. You think better of it.]]
+
+
+
+
+[[Move to another keyhole|Keyhole 2]]
+[[Back|Realm 1]]</tw-passagedata><tw-passagedata pid="3" name="Keyhole 2" tags="keyhole2" position="664,21" size="100,100">[You have trouble making out the world beyond the keyhole.]
+(if: $keyholereveal is 1)[(mouseover: &quot;making out&quot;)[Strangely, you feel called to the blurry world before you]]
+(if: $keyholereveal is 1)[(mouseover: &quot;world&quot;)[as if you are looking at a home long forgotten.]]
+[[Move to another keyhole|Keyhole 3]]
+[[Back|Keyhole 1]]</tw-passagedata><tw-passagedata pid="4" name="Keyhole 3" tags="keyhole3" position="814,20" size="100,100">[A dark tower stands before you, looming like a colossus.]
+(if: $keyholereveal is 1)[(mouseover: &quot;before&quot;)[It seems to you that somehow you&#39;ve seen this tower before...]]
+(if: $keyholereveal is 1)[(mouseover: &quot;looming&quot;)[A shiver runs down your spine as you realize the dark tower extends both up and down into sky and earth.]]
+[[Move to another keyhole|Keyhole 4]]
+[[Back|Keyhole 2]]</tw-passagedata><tw-passagedata pid="5" name="Keyhole 4" tags="keyhole4" position="959,85" size="100,100">[As you peer through the keyhole, you seem to understand this realm a little better. ](if: $keyholereveal is 0)[(mouseover: &quot;better&quot;)[You have a feeling that you&#39;ll see more if you revisit the other keyholes...]]
+(mouseover: &quot;this realm&quot;)[The door creaks open, and you decide it&#39;s time to move on and explore whatever may come.] 
 [[Cross Realms|Realm 2]]
 [[Back|Keyhole 3]]
-(set: $realm1Portal to 1)</tw-passagedata><tw-passagedata pid="6" name="Realm 2" tags="" position="1071,204" size="100,100">[Narrative R2]
+(set: $realm1Portal to 1)
+(set: $keyholereveal to 1)</tw-passagedata><tw-passagedata pid="6" name="Realm 2" tags="realm2" position="1085,204" size="100,100">[A realm of mirrors glimmers around you, quickly causing you to lose your orientation. ](mouseover: &quot;mirrors&quot;)[One mirror vibrates as you draw near.]
+[[Examine the shaking mirror|Looking Glass 1]]
 (if: $realm1Portal is 1)[Something shimmers in the darkness... ]&lt;shimmer|(click: ?shimmer)[(if: $toRealm1 is 0 and $toRealm3 is 0)[The air itself seems to breathe around you.](else-if: $toRealm1 is 1 and $toRealm3 is 0)[[[A portal to the first realm opens!|Realm 1]]](else-if: $toRealm1 is 0 and $toRealm3 is 1)[[[A portal to the third realm opens!|Realm 3]]](else-if: $toRealm1 is 1 and $toRealm3 is 1)[[[A portal to the first realm opens! |Realm 1]][[A portal to the third realm opens!|Realm 3]]]]
-[[Inspect|Looking Glass 1]]
 [[Back|Keyhole 4]]
 (if: $realm1Portal is 1 and $realm2Portal is 1 and $realm3Portal is 1)[[[Cross to the Hidden Realm|Realm 4]]]
-(set: $toRealm2 to 1)</tw-passagedata><tw-passagedata pid="7" name="Looking Glass 1" tags="" position="1133,347" size="100,100">[Narrative LG1]
-[[Inspect|Looking Glass 2]] 
-[[Back|Realm 2]]</tw-passagedata><tw-passagedata pid="8" name="Looking Glass 2" tags="" position="1139,505" size="100,100">[Narrative LG2]
-[[Inspect|Looking Glass 3]]
-[[Back|Looking Glass 1]]</tw-passagedata><tw-passagedata pid="9" name="Looking Glass 3" tags="" position="1059,651" size="100,100">[Narrative LG3]
-[[Inspect|Looking Glass 4]]
-[[Back|Looking Glass 2]]</tw-passagedata><tw-passagedata pid="10" name="Looking Glass 4" tags="" position="932,763" size="100,100">[Narrative LG4]
+(set: $toRealm2 to 1)</tw-passagedata><tw-passagedata pid="7" name="Looking Glass 1" tags="lg1" position="1138,373" size="100,100">[You stare into the mirror and a pair of eyes stares right back. ](if: $mirrorreveal is 1)[(mouseover: &quot;eyes&quot;)[The eyes blink as you watch, and the mirror shatters.]]
+(if: $mirrorreveal is 1)[(mouseover: &quot;shatters&quot;)[You jump back in alarm.]]
+[[Examine another mirror|Looking Glass 2]] 
+[[Back|Realm 2]]</tw-passagedata><tw-passagedata pid="8" name="Looking Glass 2" tags="lg2" position="1138,532" size="100,100">[In the space of one footstep, you find yourself in a cathedral of mirrors.](if: $mirrorreveal is 1)[(mouseover: &quot;cathedral&quot;)[Lilting voices come from nowhere, changing pitch to match your own.]]
+(if: $mirrorreveal is 1)[(mouseover: &quot;mirrors&quot;)[You go silent, and the voices begin to sound agitated. You hurry on.]]
+[[Examine another mirror|Looking Glass 3]]
+[[Back|Looking Glass 1]]</tw-passagedata><tw-passagedata pid="9" name="Looking Glass 3" tags="lg3" position="1046,693" size="100,100">[You feel like you are falling into the mirror](if: $mirrorreveal is 1)[(mouseover: &quot;falling&quot;)[, the reflection seeming more and more like a tunnel the longer you stare.]]
+[[Examine another mirror|Looking Glass 4]]
+[[Back|Looking Glass 2]]</tw-passagedata><tw-passagedata pid="10" name="Looking Glass 4" tags="lg4" position="920,802" size="100,100">[As you regard the mirror, you experience a feeling of wading through water.](if: $mirrorreveal is 1)[(mouseover: &quot;wading&quot;)[ You find yourself stepping out of the mirror, your clothes plastered to your skin.]]
+(if: $mirrorreveal is 0)[You find you have a better understanding of this realm. You expect that the mirrors you found earlier might reveal more if examined again.]
 [[Cross Realms|Realm 3]]
 [[Back|Looking Glass 3]]
-(set: $realm2Portal to 1)</tw-passagedata><tw-passagedata pid="11" name="Realm 3" tags="" position="775,845" size="100,100">[Narrative R3]
+(set: $realm2Portal to 1)
+(set: $mirrorreveal to 1)</tw-passagedata><tw-passagedata pid="11" name="Realm 3" tags="realm3" position="752,847" size="100,100">[You stand before an array of grand portals. ](mouseover: &quot;portals&quot;)[Each leads to a different world, with untold possibilities waiting just a footstep away.]
 (if: $realm1Portal is 1 and $realm2Portal is 1)[Something shimmers in the darkness... ]&lt;shimmer|(click: ?shimmer)[(if: $toRealm1 is 0 and $toRealm2 is 0)[The air itself seems to breathe around you.](else-if: $toRealm1 is 1 and $toRealm2 is 0)[[[A portal to the first realm opens!|Realm 1]]](else-if: $toRealm1 is 0 and $toRealm2 is 1)[[[A portal to the second realm opens!|Realm 2]]](else-if: $toRealm1 is 1 and $toRealm2 is 1)[[[A portal to the first realm opens! |Realm 1]][[A portal to the second realm opens!|Realm 2]]]]
-[[Inspect|Rift 1]]
+[[Enter a rift|Rift 1]]
 [[Back|Looking Glass 4]]
 (if: $realm1Portal is 1 and $realm2Portal is 1 and $realm3Portal is 1)[[[Cross to the Hidden Realm|Realm 4]]]
-(set: $toRealm3 to 1)</tw-passagedata><tw-passagedata pid="12" name="Rift 1" tags="" position="645,778" size="100,100">[Narrative Rf1]
-[[Inspect|Rift 2]]
-[[Back|Realm 3]]</tw-passagedata><tw-passagedata pid="13" name="Rift 2" tags="" position="496,702" size="100,100">[Narrative Rf2]
-[[Inspect|Rift 3]]
-[[Back|Rift 1]]</tw-passagedata><tw-passagedata pid="14" name="Rift 3" tags="" position="396,542" size="100,100">[Narrative Rf3]
-[[Inspect|Rift 4]]
-[[Back|Rift 2]]</tw-passagedata><tw-passagedata pid="15" name="Rift 4" tags="" position="388,375" size="100,100">[Narrative Rf4]
+(set: $toRealm3 to 1)</tw-passagedata><tw-passagedata pid="12" name="Rift 1" tags="rift1" position="618,801" size="100,100">[You step into a verdent forest world. ](if: $riftreveal is 1)[(mouseover: &quot;verdent&quot;)[Unfortunately, your serenity is shortlived.]]
+(if: $riftreveal is 1)[(mouseover: &quot;shortlived&quot;)[A snarl sounds from behind you, and a beast made of mirrors charges you! Run!]]
+[[Enter a different rift|Rift 2]]
+[[Back|Realm 3]]</tw-passagedata><tw-passagedata pid="13" name="Rift 2" tags="rift2" position="501,693" size="100,100">
+
+[You enter a misty, chilly landscape of mountains and clouds. Before you stand three portals hewn out of stone.]
+(if: $riftreveal is 1)[(mouseover: &quot;portals&quot;)[Enter portal 1]]&lt;p1|(click: ?p1)[(replace: ?p1)[Doubt gnaws at you as you draw near. Will your original rift survive? You decide to turn back.]]
+(if: $riftreveal is 1)[(mouseover: &quot;portals&quot;)[Enter portal 2]]&lt;p2|(click: ?p2)[(replace: ?p2)[The voice of a siren drifts out as you draw near. You decide to turn back.]]
+(if: $riftreveal is 1)[(mouseover: &quot;portals&quot;)[Enter portal 3]]&lt;p3|(click: ?p3)[(replace: ?p3)[Your body is too large to fit. You decide to turn back.]]
+[[Enter a different rift|Rift 3]]
+[[Back|Rift 1]]</tw-passagedata><tw-passagedata pid="14" name="Rift 3" tags="rift3" position="402,541" size="100,100">[You realize you have been wandering in a bizarre desert for who knows how long. You decide to head back before you get too lost. ](if: $riftreveal is 1)[(mouseover: &quot;head back&quot;)[The disembodied, mechanical heads call your name in dry, haunting voices as you trudge back across the tundra.]]
+[[Enter a different rift|Rift 4]]
+[[Back|Rift 2]]</tw-passagedata><tw-passagedata pid="15" name="Rift 4" tags="rift4" position="375,375" size="100,100">[Just a moment after stepping through the rift, a massive beast approaches you. You know deep in your bones that you have been waiting a long time. Something tells you that you might glean more from the rifts you visited previously.]
+(mouseover: &quot;waiting a long time&quot;)[The wolf and you stare into each other&#39;s eyes until you realize that an [understanding]&lt;tag| has been reached.](click: ?tag)[The wolf speaks inside your mind like the voice of instinct itself: &quot;Go now. You are nearly finished.&quot;]
 [[Cross Realms|Realm 1]]
 [[Back|Rift 3]]
-(set: $realm3Portal to 1)</tw-passagedata><tw-passagedata pid="16" name="Realm 4" tags="" position="753,434" size="100,100">[Hidden Realm!]</tw-passagedata></tw-storydata>
+(set: $realm3Portal to 1)
+(set: $riftreveal to 1)</tw-passagedata><tw-passagedata pid="16" name="Realm 4" tags="realm4" position="753,434" size="100,100">[You have survived your travels,](mouseover: &quot;survived your travels, &quot;)[reached the Hidden Realm,](mouseover: &quot;Hidden Realm&quot;)[ and become all that you can be.]
+(mouseover: &quot;become all that you can be.&quot;)[Your journey is complete!]
+[[Return to the first realm|Realm 1]]
+[[Return to the second realm|Realm 2]]
+[[Return to the third realm|Realm 3]]</tw-passagedata><tw-passagedata pid="17" name="Header" tags="header" position="151,164" size="100,100">{
+(print: &quot;&lt;script&gt;$(&#39;html&#39;).removeClass(\)&lt;/script&gt;&quot;)
+(if: (passage:)&#39;s tags&#39;s length &gt; 0)[
+(print: &quot;&lt;script&gt;$(&#39;html&#39;).addClass(&#39;&quot; + (passage:)&#39;s tags.join(&#39; &#39;) + &quot;&#39;\)&lt;/script&gt;&quot;)
+]
+}</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
